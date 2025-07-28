@@ -10,6 +10,14 @@ class SiswaController extends Controller
     public function index()
     {
         $students = Siswa::all();
-        return view('siswa.index', compact('students'));
+        $days = [
+            'Senin',
+            'Selasa',
+            'Rabu',
+            'Kamis',
+            'Jumat',
+            'Sabtu',
+        ];
+        return view('siswa.index', compact('students', 'days'));
     }
 }

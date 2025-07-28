@@ -10,4 +10,7 @@ class Siswa extends Model
     use HasFactory;
 
     protected $table = 'tb_siswa';
+
+    // protected $fillable = [];
+    // protected $guarded = [];
 }
