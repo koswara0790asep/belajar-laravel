@@ -276,22 +276,29 @@
 
       <li class="nav-item">
         <a class="nav-link {{ request()->is('') ?  '' : 'collapsed' }}" href="#">
-          <i class="bi bi-grid"></i>
+          <i class="bi bi-speedometer"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
       
       <li class="nav-item">
-        <a class="nav-link {{ request()->is('classes') ?  '' : 'collapsed' }}" href="{{ route('kelas.index') }}">
-          <i class="bi bi-grid"></i>
+        <a class="nav-link {{ request()->is('class') ?  '' : 'collapsed' }}" href="{{ route('class.index') }}">
+          <i class="bi bi-building"></i>
           <span>Data Kelas</span>
         </a>
       </li><!-- End Dashboard Nav -->
       
       <li class="nav-item">
-        <a class="nav-link {{ request()->is('students') ?  '' : 'collapsed' }}" href="{{ route('siswa.index') }}">
-          <i class="bi bi-grid"></i>
+        <a class="nav-link {{ request()->is('student') ?  '' : 'collapsed' }}" href="{{ route('student.index') }}">
+          <i class="bi bi-person"></i>
           <span>Data Siswa</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link {{ request()->is('teacher') ?  '' : 'collapsed' }}" href="{{ route('teacher.index') }}">
+          <i class="bi bi-person"></i>
+          <span>Data Guru</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
